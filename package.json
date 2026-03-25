@@ -3,7 +3,11 @@
 		"@wordpress/scripts": "^31.7.0"
 	},
 	"scripts": {
+
+		"start": "wp-scripts start",
 		"build": "wp-scripts build",
+		"plugin-zip": "wp-scripts plugin-zip",
+		
 		"check-engines": "wp-scripts check-engines",
 		"check-licenses": "wp-scripts check-licenses",
 		"format": "wp-scripts format",
@@ -12,8 +16,6 @@
 		"lint:md:docs": "wp-scripts lint-md-docs",
 		"lint:pkg-json": "wp-scripts lint-pkg-json",
 		"packages-update": "wp-scripts packages-update",
-		"plugin-zip": "wp-scripts plugin-zip",
-		"start": "wp-scripts start",
 		"test:e2e": "wp-scripts test-e2e",
 		"test:unit": "wp-scripts test-unit-js"
 	}
