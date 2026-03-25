@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name:     Wp Advertisement
  * Plugin URI:      PLUGIN SITE HERE
@@ -12,4 +13,18 @@
  * @package         Wp_Advertisement
  */
 
-// Your code starts here.
+namespace WPADS;
+
+define('WPADS_PLUGIN_DIR', __DIR__);
+define('WPADS_PLUGIN_FILE', __FILE__);
+
+function init()
+{
+    if (is_readable(WPADS_PLUGIN_DIR . '/vendor/autoload.php')) {
+        include_once WPADS_PLUGIN_DIR . '/vendor/autoload.php';
+    }
+
+    PostType::init();
+}
+
+add_action('plugins_loaded', __NAMESPACE__ . '\\init');
