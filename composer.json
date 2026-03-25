@@ -1,4 +1,10 @@
 {
+  "name":"tonnysantana/wp-advertisement",
+  "autoload": {
+    "psr-4": {
+      "WPADS\\" : "src/"
+    }
+  },
   "require-dev": {
     "wp-cli/i18n-command": "^2"
   },
