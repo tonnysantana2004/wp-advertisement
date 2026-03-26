@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Plugin Name:     Wp Advertisement
  * Plugin URI:      PLUGIN SITE HERE
@@ -10,21 +9,22 @@
  * Domain Path:     /languages
  * Version:         0.1.0
  *
- * @package         Wp_Advertisement
+ * @package         WP Advertisement
  */
 
 namespace WPADS;
 
-define('WPADS_PLUGIN_DIR', __DIR__);
-define('WPADS_PLUGIN_FILE', __FILE__);
+add_action(
+	'plugins_loaded',
+	function () {
 
-function init()
-{
-    if (is_readable(WPADS_PLUGIN_DIR . '/vendor/autoload.php')) {
-        include_once WPADS_PLUGIN_DIR . '/vendor/autoload.php';
-    }
+		define( 'WPADS_PLUGIN_DIR', __DIR__ );
+		define( 'WPADS_PLUGIN_FILE', __FILE__ );
 
-    PostType::init();
-}
+		if ( is_Readable( WPADS_PLUGIN_DIR . '/vendor/autoload.php' ) ) {
+			include_once WPADS_PLUGIN_DIR . '/vendor/autoload.php';
+		}
 
-add_action('plugins_loaded', __NAMESPACE__ . '\\init');
+		AdvertisementPostType::init();
+	}
+);
