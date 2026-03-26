@@ -6,9 +6,19 @@
     }
   },
   "require-dev": {
-    "wp-cli/i18n-command": "^2"
+    "wp-cli/i18n-command": "^2",
+    "squizlabs/php_codesniffer": "3.7.2",
+    "wp-coding-standards/wpcs": "3.0",
+    "phpcompatibility/phpcompatibility-wp": "^2.1"
   },
   "scripts": {
-    "makepot": "wp i18n make-pot ."
+    "makepot": "wp i18n make-pot .",
+    "lint:wpcs" : "phpcs",
+    "fix:wpcs" : "phpcbf"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   }
 }
