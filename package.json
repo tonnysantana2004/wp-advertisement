@@ -1,22 +1,36 @@
 {
-	"devDependencies": {
-		"@wordpress/scripts": "^31.7.0"
-	},
-	"scripts": {
-
-		"start": "wp-scripts start",
-		"build": "wp-scripts build",
-		"plugin-zip": "wp-scripts plugin-zip",
-		
-		"check-engines": "wp-scripts check-engines",
-		"check-licenses": "wp-scripts check-licenses",
-		"format": "wp-scripts format",
-		"lint:css": "wp-scripts lint-style",
-		"lint:js": "wp-scripts lint-js",
-		"lint:md:docs": "wp-scripts lint-md-docs",
-		"lint:pkg-json": "wp-scripts lint-pkg-json",
-		"packages-update": "wp-scripts packages-update",
-		"test:e2e": "wp-scripts test-e2e",
-		"test:unit": "wp-scripts test-unit-js"
-	}
+  "name": "wp-advertisement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build --webpack-src-dir=resources --output-path=build",
+    "start": "wp-scripts start --webpack-src-dir=resources --output-path=build",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:md:docs": "wp-scripts lint-md-docs",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "plugin-zip": "wp-scripts plugin-zip",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonnysantana2004/wp-advertisement.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/tonnysantana2004/wp-advertisement#readme",
+  "devDependencies": {
+    "@wordpress/plugins": "^7.42.0",
+    "@wordpress/scripts": "^31.7.0",
+    "glob": "^13.0.6",
+    "path": "^0.12.7",
+    "webpack-remove-empty-scripts": "^1.1.1"
+  }
 }
