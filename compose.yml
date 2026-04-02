@@ -15,14 +15,14 @@ services:
       - MYSQL_PASSWORD=wordpress
     expose:
       - 3306
+      - 33060
     networks:
       - wp_network
   wordpress:
     image: wordpress:latest
-    working_dir: /var/www/html/wp-content/plugins
     volumes:
       - ./.wp_data:/var/www/html
-      - ./app:/var/www/html/wp-content/plugins/wp-advertisement
+      - ./.:/var/www/html/wp-content/plugins/wp-advertisement
     ports:
       - 80:80
     restart: always
