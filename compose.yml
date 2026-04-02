@@ -1,0 +1,38 @@
+networks:
+  wp_network:
+    driver: bridge
+
+services:
+  mysql:
+    image: mysql:latest
+    volumes:
+      - ./.db_data:/var/lib/mysql
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=somewordpress
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_USER=wordpress
+      - MYSQL_PASSWORD=wordpress
+    expose:
+      - 3306
+    networks:
+      - wp_network
+  wordpress:
+    image: wordpress:latest
+    working_dir: /var/www/html/wp-content/plugins
+    volumes:
+      - ./.wp_data:/var/www/html
+      - ./app:/var/www/html/wp-content/plugins/wp-advertisement
+    ports:
+      - 80:80
+    restart: always
+    environment:
+      - WORDPRESS_DB_HOST=mysql
+      - WORDPRESS_DB_USER=wordpress
+      - WORDPRESS_DB_PASSWORD=wordpress
+      - WORDPRESS_DB_NAME=wordpress
+      - WORDPRESS_DEBUG=true
+    depends_on:
+      - mysql
+    networks:
+      - wp_network
