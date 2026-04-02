@@ -4,10 +4,10 @@ phpunit.xml
 Thumbs.db
 wp-cli.local.yml
 node_modules/
-vendor/
-!vendor/composer
+vendor/*
 
 # Ensure the autoload is not ignored.
+!vendor/composer
 !vendor/autoload.php
 
 *.sql
