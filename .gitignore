@@ -5,10 +5,10 @@ Thumbs.db
 wp-cli.local.yml
 node_modules/
 vendor/
+!vendor/composer
 
 # Ensure the autoload is not ignored.
 !vendor/autoload.php
-!vendor/composer/*
 
 *.sql
 *.tar.gz

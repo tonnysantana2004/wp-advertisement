@@ -1,9 +1,15 @@
 {
-    "packages": [
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f54bda6352c6a295ceee001fca27f6b4",
+    "packages": [],
+    "packages-dev": [
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
             "version": "v1.2.0",
-            "version_normalized": "1.2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/composer-installer.git",
@@ -28,12 +34,10 @@
                 "phpcompatibility/php-compatibility": "^9.0 || ^10.0.0@dev",
                 "yoast/phpunit-polyfills": "^1.0"
             },
-            "time": "2025-11-11T04:32:07+00:00",
             "type": "composer-plugin",
             "extra": {
                 "class": "PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin"
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\": "src/"
@@ -97,12 +101,11 @@
                     "type": "thanks_dev"
                 }
             ],
-            "install-path": "../dealerdirect/phpcodesniffer-composer-installer"
+            "time": "2025-11-11T04:32:07+00:00"
         },
         {
             "name": "eftec/bladeone",
             "version": "3.52",
-            "version_normalized": "3.52.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/EFTEC/BladeOne.git",
@@ -127,9 +130,7 @@
                 "eftec/bladeonehtml": "Extension to create forms",
                 "ext-mbstring": "This extension is used if it's active"
             },
-            "time": "2021-04-17T13:49:01+00:00",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "eftec\\bladeone\\": "lib/"
@@ -158,12 +159,11 @@
                 "issues": "https://github.com/EFTEC/BladeOne/issues",
                 "source": "https://github.com/EFTEC/BladeOne/tree/3.52"
             },
-            "install-path": "../eftec/bladeone"
+            "time": "2021-04-17T13:49:01+00:00"
         },
         {
             "name": "gettext/gettext",
             "version": "v4.8.12",
-            "version_normalized": "4.8.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-gettext/Gettext.git",
@@ -193,9 +193,7 @@
                 "twig/extensions": "Is necessary if you want to use the Twig extractor",
                 "twig/twig": "Is necessary if you want to use the Twig extractor"
             },
-            "time": "2024-05-18T10:25:07+00:00",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Gettext\\": "src"
@@ -242,12 +240,11 @@
                     "type": "patreon"
                 }
             ],
-            "install-path": "../gettext/gettext"
+            "time": "2024-05-18T10:25:07+00:00"
         },
         {
             "name": "gettext/languages",
             "version": "2.12.2",
-            "version_normalized": "2.12.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-gettext/Languages.git",
@@ -265,13 +262,11 @@
             "require-dev": {
                 "phpunit/phpunit": "^4.8 || ^5.7 || ^6.5 || ^7.5 || ^8.4"
             },
-            "time": "2026-02-23T14:05:50+00:00",
             "bin": [
                 "bin/export-plural-rules",
                 "bin/import-cldr-data"
             ],
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Gettext\\Languages\\": "src/"
@@ -320,12 +315,11 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../gettext/languages"
+            "time": "2026-02-23T14:05:50+00:00"
         },
         {
             "name": "mck89/peast",
             "version": "v1.17.5",
-            "version_normalized": "1.17.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mck89/peast.git",
@@ -344,14 +338,12 @@
             "require-dev": {
                 "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
             },
-            "time": "2026-03-15T10:47:07+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.17.5-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Peast\\": "lib/Peast/"
@@ -372,12 +364,11 @@
                 "issues": "https://github.com/mck89/peast/issues",
                 "source": "https://github.com/mck89/peast/tree/v1.17.5"
             },
-            "install-path": "../mck89/peast"
+            "time": "2026-03-15T10:47:07+00:00"
         },
         {
             "name": "phpcompatibility/php-compatibility",
             "version": "9.3.5",
-            "version_normalized": "9.3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCompatibility/PHPCompatibility.git",
@@ -403,9 +394,7 @@
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.5 || This Composer plugin will sort out the PHPCS 'installed_paths' automatically.",
                 "roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
             },
-            "time": "2019-12-27T09:44:58+00:00",
             "type": "phpcodesniffer-standard",
-            "installation-source": "source",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0-or-later"
@@ -437,12 +426,11 @@
                 "issues": "https://github.com/PHPCompatibility/PHPCompatibility/issues",
                 "source": "https://github.com/PHPCompatibility/PHPCompatibility"
             },
-            "install-path": "../phpcompatibility/php-compatibility"
+            "time": "2019-12-27T09:44:58+00:00"
         },
         {
             "name": "phpcompatibility/phpcompatibility-paragonie",
             "version": "1.3.4",
-            "version_normalized": "1.3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCompatibility/PHPCompatibilityParagonie.git",
@@ -466,9 +454,7 @@
                 "dealerdirect/phpcodesniffer-composer-installer": "^1.0 || This Composer plugin will sort out the PHP_CodeSniffer 'installed_paths' automatically.",
                 "roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
             },
-            "time": "2025-09-19T17:43:28+00:00",
             "type": "phpcodesniffer-standard",
-            "installation-source": "source",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0-or-later"
@@ -516,12 +502,11 @@
                     "type": "thanks_dev"
                 }
             ],
-            "install-path": "../phpcompatibility/phpcompatibility-paragonie"
+            "time": "2025-09-19T17:43:28+00:00"
         },
         {
             "name": "phpcompatibility/phpcompatibility-wp",
             "version": "2.1.8",
-            "version_normalized": "2.1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCompatibility/PHPCompatibilityWP.git",
@@ -545,9 +530,7 @@
                 "dealerdirect/phpcodesniffer-composer-installer": "^1.0 || This Composer plugin will sort out the PHP_CodeSniffer 'installed_paths' automatically.",
                 "roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
             },
-            "time": "2025-10-18T00:05:59+00:00",
             "type": "phpcodesniffer-standard",
-            "installation-source": "source",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0-or-later"
@@ -594,12 +577,11 @@
                     "type": "thanks_dev"
                 }
             ],
-            "install-path": "../phpcompatibility/phpcompatibility-wp"
+            "time": "2025-10-18T00:05:59+00:00"
         },
         {
             "name": "phpcsstandards/phpcsextra",
             "version": "1.2.0",
-            "version_normalized": "1.2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHPCSExtra.git",
@@ -623,7 +605,6 @@
                 "phpcsstandards/phpcsdevtools": "^1.2.1",
                 "phpunit/phpunit": "^4.5 || ^5.0 || ^6.0 || ^7.0"
             },
-            "time": "2023-12-02T14:30:12+00:00",
             "type": "phpcodesniffer-standard",
             "extra": {
                 "branch-alias": {
@@ -631,7 +612,6 @@
                     "dev-develop": "1.x-dev"
                 }
             },
-            "installation-source": "source",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0-or-later"
@@ -675,12 +655,11 @@
                     "type": "open_collective"
                 }
             ],
-            "install-path": "../phpcsstandards/phpcsextra"
+            "time": "2023-12-02T14:30:12+00:00"
         },
         {
             "name": "phpcsstandards/phpcsutils",
             "version": "1.0.8",
-            "version_normalized": "1.0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHPCSUtils.git",
@@ -704,7 +683,6 @@
                 "phpcsstandards/phpcsdevcs": "^1.1.6",
                 "yoast/phpunit-polyfills": "^1.0.5 || ^2.0.0"
             },
-            "time": "2023-07-16T21:39:41+00:00",
             "type": "phpcodesniffer-standard",
             "extra": {
                 "branch-alias": {
@@ -712,7 +690,6 @@
                     "dev-develop": "1.x-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "PHPCSUtils/"
@@ -751,12 +728,11 @@
                 "issues": "https://github.com/PHPCSStandards/PHPCSUtils/issues",
                 "source": "https://github.com/PHPCSStandards/PHPCSUtils"
             },
-            "install-path": "../phpcsstandards/phpcsutils"
+            "time": "2023-07-16T21:39:41+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
             "version": "3.7.2",
-            "version_normalized": "3.7.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
@@ -777,7 +753,6 @@
             "require-dev": {
                 "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
             },
-            "time": "2023-02-22T23:07:41+00:00",
             "bin": [
                 "bin/phpcs",
                 "bin/phpcbf"
@@ -788,7 +763,6 @@
                     "dev-master": "3.x-dev"
                 }
             },
-            "installation-source": "source",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -825,21 +799,20 @@
                     "type": "open_collective"
                 }
             ],
-            "install-path": "../squizlabs/php_codesniffer"
+            "time": "2023-02-22T23:07:41+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v7.4.6",
-            "version_normalized": "7.4.6.0",
+            "version": "v7.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "8655bf1076b7a3a346cb11413ffdabff50c7ffcf"
+                "reference": "e0be088d22278583a82da281886e8c3592fbf149"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/8655bf1076b7a3a346cb11413ffdabff50c7ffcf",
-                "reference": "8655bf1076b7a3a346cb11413ffdabff50c7ffcf",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/e0be088d22278583a82da281886e8c3592fbf149",
+                "reference": "e0be088d22278583a82da281886e8c3592fbf149",
                 "shasum": ""
             },
             "require": {
@@ -848,9 +821,7 @@
             "require-dev": {
                 "symfony/filesystem": "^6.4|^7.0|^8.0"
             },
-            "time": "2026-01-29T09:40:50+00:00",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Finder\\": ""
@@ -876,7 +847,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v7.4.6"
+                "source": "https://github.com/symfony/finder/tree/v7.4.8"
             },
             "funding": [
                 {
@@ -896,12 +867,11 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/finder"
+            "time": "2026-03-24T13:12:05+00:00"
         },
         {
             "name": "wp-cli/i18n-command",
             "version": "v2.7.0",
-            "version_normalized": "2.7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/i18n-command.git",
@@ -927,7 +897,6 @@
                 "ext-json": "Used for reading and generating JSON translation files",
                 "ext-mbstring": "Used for calculating include/exclude matches in code extraction"
             },
-            "time": "2026-03-16T17:13:39+00:00",
             "type": "wp-cli-package",
             "extra": {
                 "bundled": true,
@@ -944,7 +913,6 @@
                     "dev-main": "2.x-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "files": [
                     "i18n-command.php"
@@ -969,12 +937,11 @@
                 "issues": "https://github.com/wp-cli/i18n-command/issues",
                 "source": "https://github.com/wp-cli/i18n-command/tree/v2.7.0"
             },
-            "install-path": "../wp-cli/i18n-command"
+            "time": "2026-03-16T17:13:39+00:00"
         },
         {
             "name": "wp-cli/mustache",
             "version": "v2.14.99",
-            "version_normalized": "2.14.99.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/mustache.php.git",
@@ -996,9 +963,7 @@
                 "friendsofphp/php-cs-fixer": "~2.19.3",
                 "yoast/phpunit-polyfills": "^2.0"
             },
-            "time": "2025-05-06T16:15:37+00:00",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Mustache": "src/"
@@ -1024,12 +989,11 @@
             "support": {
                 "source": "https://github.com/wp-cli/mustache.php/tree/v2.14.99"
             },
-            "install-path": "../wp-cli/mustache"
+            "time": "2025-05-06T16:15:37+00:00"
         },
         {
             "name": "wp-cli/mustangostang-spyc",
             "version": "0.6.6",
-            "version_normalized": "0.6.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/spyc.git",
@@ -1047,14 +1011,12 @@
             "require-dev": {
                 "phpunit/phpunit": "4.3.*@dev"
             },
-            "time": "2026-03-12T12:30:41+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "0.5.x-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "files": [
                     "includes/functions.php"
@@ -1078,21 +1040,20 @@
             "support": {
                 "source": "https://github.com/wp-cli/spyc/tree/0.6.6"
             },
-            "install-path": "../wp-cli/mustangostang-spyc"
+            "time": "2026-03-12T12:30:41+00:00"
         },
         {
             "name": "wp-cli/php-cli-tools",
-            "version": "v0.12.8",
-            "version_normalized": "0.12.8.0",
+            "version": "v0.12.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/php-cli-tools.git",
-                "reference": "9cbf9946ebe3462005b642de69ccd65753981517"
+                "reference": "c3d25138ce46a66647ec0dc9b17bf300338494aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/php-cli-tools/zipball/9cbf9946ebe3462005b642de69ccd65753981517",
-                "reference": "9cbf9946ebe3462005b642de69ccd65753981517",
+                "url": "https://api.github.com/repos/wp-cli/php-cli-tools/zipball/c3d25138ce46a66647ec0dc9b17bf300338494aa",
+                "reference": "c3d25138ce46a66647ec0dc9b17bf300338494aa",
                 "shasum": ""
             },
             "require": {
@@ -1102,14 +1063,12 @@
                 "roave/security-advisories": "dev-latest",
                 "wp-cli/wp-cli-tests": "^5"
             },
-            "time": "2026-03-16T15:18:29+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-main": "0.12.x-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "files": [
                     "lib/cli/cli.php"
@@ -1142,14 +1101,13 @@
             ],
             "support": {
                 "issues": "https://github.com/wp-cli/php-cli-tools/issues",
-                "source": "https://github.com/wp-cli/php-cli-tools/tree/v0.12.8"
+                "source": "https://github.com/wp-cli/php-cli-tools/tree/v0.12.9"
             },
-            "install-path": "../wp-cli/php-cli-tools"
+            "time": "2026-03-29T11:12:54+00:00"
         },
         {
             "name": "wp-cli/wp-cli",
             "version": "v2.12.0",
-            "version_normalized": "2.12.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/wp-cli.git",
@@ -1180,7 +1138,6 @@
                 "ext-readline": "Include for a better --prompt implementation",
                 "ext-zip": "Needed to support extraction of ZIP archives when doing downloads or updates"
             },
-            "time": "2025-05-07T01:16:12+00:00",
             "bin": [
                 "bin/wp",
                 "bin/wp.bat"
@@ -1191,7 +1148,6 @@
                     "dev-main": "2.12.x-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "WP_CLI\\": "php/"
@@ -1216,12 +1172,11 @@
                 "issues": "https://github.com/wp-cli/wp-cli/issues",
                 "source": "https://github.com/wp-cli/wp-cli"
             },
-            "install-path": "../wp-cli/wp-cli"
+            "time": "2025-05-07T01:16:12+00:00"
         },
         {
             "name": "wp-coding-standards/wpcs",
             "version": "3.0.0",
-            "version_normalized": "3.0.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress-Coding-Standards.git",
@@ -1254,9 +1209,7 @@
                 "ext-iconv": "For improved results",
                 "ext-mbstring": "For improved results"
             },
-            "time": "2023-08-21T14:28:38+00:00",
             "type": "phpcodesniffer-standard",
-            "installation-source": "source",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -1279,28 +1232,15 @@
                 "source": "https://github.com/WordPress/WordPress-Coding-Standards",
                 "wiki": "https://github.com/WordPress/WordPress-Coding-Standards/wiki"
             },
-            "install-path": "../wp-coding-standards/wpcs"
+            "time": "2023-08-21T14:28:38+00:00"
         }
     ],
-    "dev": true,
-    "dev-package-names": [
-        "dealerdirect/phpcodesniffer-composer-installer",
-        "eftec/bladeone",
-        "gettext/gettext",
-        "gettext/languages",
-        "mck89/peast",
-        "phpcompatibility/php-compatibility",
-        "phpcompatibility/phpcompatibility-paragonie",
-        "phpcompatibility/phpcompatibility-wp",
-        "phpcsstandards/phpcsextra",
-        "phpcsstandards/phpcsutils",
-        "squizlabs/php_codesniffer",
-        "symfony/finder",
-        "wp-cli/i18n-command",
-        "wp-cli/mustache",
-        "wp-cli/mustangostang-spyc",
-        "wp-cli/php-cli-tools",
-        "wp-cli/wp-cli",
-        "wp-coding-standards/wpcs"
-    ]
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
 }
